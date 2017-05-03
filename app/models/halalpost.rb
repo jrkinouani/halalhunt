@@ -1,0 +1,2 @@
+class Halalpost < ApplicationRecord
+end

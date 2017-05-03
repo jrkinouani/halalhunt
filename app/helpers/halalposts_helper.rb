@@ -1,0 +1,2 @@
+module HalalpostsHelper
+end
