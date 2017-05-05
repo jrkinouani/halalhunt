@@ -1,6 +1,7 @@
 class HalalpostsController < ApplicationController
-  before_action :find_halapost,  only:[:show, :edit, :destroy]
+  before_action :find_halalpost,  only:[:show, :edit, :destroy]
   def index
+    @halalposts = Halalpost.all.order("created_at DESC")
   end
 
   def new

@@ -1,0 +1,8 @@
+<section id="jobs">
+      <% @halalposts.each do |halalpost| %>
+      <div class="job">
+      <h2><%= link_to halalpost.title.capitalize,halalpost %><br></h2>
+      
+    </div>
+      <% end %>
+</section>

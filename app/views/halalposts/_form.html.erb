@@ -2,6 +2,7 @@
   <div class="col-md-offset-4 col-md-4 ">
     <h1>New job</h1>
     <%=  form_for(@halalpost, html: { class: 'form-horizontal' }) do |f| %>
+    <%= f.select :category, ["choississez une catégorie", "Livre", "Religion", "Restaurant"] ,{},{ :class => "form-control"}%>
     <%= f.text_field :title , :placeholder => "Votre titre", class:"form-control"%>
     <%= f.text_area :description , :placeholder => "Votre annonce", class:"form-control"%>
     <%= f.text_field :url, :placeholder => "link to Job",  class:"form-control" %>
